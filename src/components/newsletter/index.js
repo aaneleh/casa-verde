@@ -40,7 +40,7 @@ const ButtonNewsletter = styled.input`
 function Newsletter() {
 
     async function post(body){
-        console.log(body);
+/*         console.log(body); */
         fetch("https://enviador.vercel.app/", {
             method: 'POST',
             body: JSON.stringify(body),
