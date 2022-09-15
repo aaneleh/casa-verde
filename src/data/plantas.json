@@ -1,0 +1,38 @@
+[
+    {
+        "id": 0,
+        "imagem": "/images/planta-card-1.png",
+        "nome": "Ajuda reptans",
+        "preco": "20,00"
+    },
+    {
+        "id": 1,
+        "imagem": "/images/planta-card-2.png",
+        "nome": "Cordyline fruticosa",
+        "preco": "20,00"
+    },
+    {
+        "id": 2,
+        "imagem": "/images/planta-card-3.png",
+        "nome": "Crassula ovata",
+        "preco": "20,00"
+    },
+    {
+        "id": 3,
+        "imagem": "/images/planta-card-4.png",
+        "nome": "Cyperus rotundus",
+        "preco": "20,00"
+    },
+    {
+        "id": 4,
+        "imagem": "/images/planta-card-5.png",
+        "nome": "Delairea odorata",
+        "preco": "20,00"
+    },
+    {
+        "id": 5,
+        "imagem": "/images/planta-card-6.png",
+        "nome": "Datura metel",
+        "preco": "20,00"
+    }
+]
