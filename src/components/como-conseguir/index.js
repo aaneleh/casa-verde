@@ -6,12 +6,20 @@ const Grid = styled.div`
     height: 29em;
     display: grid;
     grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+
     background: white;
     overflow:hidden;
     margin-left: auto;
     margin-right: auto;
     img {
         object-position: top 10px;
+    }
+    @media screen and (max-width: 832px){
+        height: 45em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 17.5em 30em;
+        text-align: center;
     }
 `
 
