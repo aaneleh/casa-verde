@@ -16,16 +16,14 @@ const Container = styled.div`
 `
 const PlantaEl = styled.img`
     position: absolute;
-    z-index: 10;
     top: -50px;
     right: 50px;
 `
 
-
 function Hero() {
     return (
         <>
-            <Container>
+            <Container className='texto-hero'>
                 <h4>
                     Sua casa com as
                 </h4>
@@ -38,7 +36,7 @@ function Hero() {
                 <Newsletter/>
             </Container>
             
-            <PlantaEl src={Planta}></PlantaEl>        
+            <PlantaEl className="imagem-hero" src={Planta}></PlantaEl>        
         </>
     );
 }

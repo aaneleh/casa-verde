@@ -34,7 +34,6 @@ const ButtonNewsletter = styled.input`
     color: #fff;
     cursor:pointer;
     position: relative;
-    z-index: 1000;
 `
 
 function Newsletter() {

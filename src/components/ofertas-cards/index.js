@@ -12,7 +12,6 @@ const Card = styled.div`
     background-color: #fff;
     overflow-y:hidden;
     position: relative;
-    z-index: -1;
 `
 const Descricao = styled.div`
     text-align: left;

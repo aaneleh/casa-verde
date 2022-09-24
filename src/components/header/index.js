@@ -33,7 +33,6 @@ const FecharIcone = styled.li`
 `
 const MenuMobile = styled.ul`
     position: fixed;
-    z-index: 1000;
     width: 10em;
     height: 100vh;
     background-color: #fff;
@@ -75,7 +74,7 @@ function Header() {
     const [ sideBar, setSideBar ] = useState(false);
 
     return (
-        <Wrapper id="header">
+        <Wrapper id="header" className='header'>
             <Link to="/">
                 <div>
                     <img src={logo} alt="🌿 Casa Verde"></img>
@@ -113,7 +112,7 @@ function Header() {
                 <MenuIcone onClick={() => setSideBar(true)}> 
                     <img src={lista} alt="🌿 Casa Verde"></img>
                 </MenuIcone>
-                <MenuMobile style={sideBar ? {transform: "translateX(0)"} : {transform: "translateX(200%)"} }>
+                <MenuMobile className="sidebar" style={sideBar ? {transform: "translateX(0)"} : {transform: "translateX(200%)"} }>
                     <FecharIcone onClick={() => setSideBar(false)}>
                         <img src={fechar} alt="X"></img>
                     </FecharIcone>

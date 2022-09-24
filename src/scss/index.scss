@@ -64,11 +64,64 @@ h1 {
 
   * {
     position: relative;
-    z-index: 100;
   }
 }
 .pop-up {
   position: fixed;
-  z-index: 10000;
-  transform: translateZ(+100px)
+  transform: translateZ(+100px);
+  animation: some 3s;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes some {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+//SOBREPOSIÇÃO
+.bolha {
+  z-index: -1;
+}
+.wrapper-carrinho, .home{
+  z-index: 0;
+}
+//hero
+.texto-hero {
+  z-index: 2;
+}
+.imagem-hero {
+  z-index: 1;
+}
+//como conseguir
+.como-conseguir{
+  z-index: 2;
+}
+//ofertas
+.ofertas{
+  z-index: 2;
+}
+//header
+.header{
+  z-index: 3;
+}
+.sidebar{
+  z-index: 5;
+}
+//popup
+.pop-up{
+  z-index: 3;
+}
+.x-pop-up{
+  z-index: 4;
 }

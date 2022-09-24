@@ -1,10 +1,11 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import plantasJson from '../../data/plantas.json';
 
 const Card = styled.div`
     height: 12.5em;
-    width: 30em;
+    width: min(95%, 30em);
 
     background-color: #fff;
     overflow-y:hidden;
@@ -12,7 +13,6 @@ const Card = styled.div`
     position: fixed;
     bottom: 4em;
     right: 1em;
-    z-index: 1000;
 
     display: grid;
     align-items: top;
@@ -20,7 +20,6 @@ const Card = styled.div`
 `
 const Fechar = styled.button`
     position: absolute;
-    z-index: 1000;
     top: 1em;
     left: 1em;
     cursor: pointer;
@@ -59,10 +58,14 @@ function CarrinhoPopUp(props) {
         return null;
     }
     
+    setTimeout(() => {
+        props.setTrigger(false)
+    }, 5000)
+
     return (props.trigger) ? (
         <Card className="pop-up sombra">
 
-            <Fechar onClick={() => props.setTrigger(false) }>
+            <Fechar className="x-pop-up" onClick={() => props.setTrigger(false) }>
                 X
             </Fechar>
             

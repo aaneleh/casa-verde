@@ -2,6 +2,7 @@ import Header from '../../components/header';
 import styled from 'styled-components';
 import CarrinhoCard from '../../components/carrinho-card';
 import { useCarrinho } from '../../contexts/CarrinhoContext';
+import plantasJson from '../../data/plantas.json';
 
 const Wrapper = styled.div`
     text-align: center;
@@ -23,7 +24,7 @@ function Carrinho() {
 
     const { ItensCarrinho } = useCarrinho()
 
-    if(ItensCarrinho){
+    if(ItensCarrinho.length !== 0){
         return (
             <div className="wrapper-carrinho">
                 <Header/>
@@ -45,10 +46,20 @@ function Carrinho() {
                         }
                     </Grid>
 
+                    <h4>
+                        Total: R$ { 
+                            
+                            ItensCarrinho.reduce((total, atual) => {
+                                const item = plantasJson.find(planta => planta.id = atual.id)
+                                return total + (item.preco * atual.quantidade)
+                            }, 0)
+                            
+                        }
+                    </h4>
+
                 </Wrapper>
             </div>
         )
-
     } else {
         return (
             <div className="wrapper-carrinho">
@@ -59,14 +70,11 @@ function Carrinho() {
                         meu carrinho
                     </h1>
     
-                    <h4> nenhum item ainda </h4>
+                    <h4> Nenhum item ainda </h4>
                 </Wrapper>
             </div>
         );
-
-
     }
-
 
 }
 

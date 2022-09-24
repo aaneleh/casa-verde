@@ -10,7 +10,6 @@ import { CarrinhoProvider } from './contexts/CarrinhoContext';
 
 const BolhaEl = styled.img`
     position: absolute;
-    z-index: 1;
     top: 0;
     right: 0;
 `
@@ -25,7 +24,7 @@ root.render(
           <Route path="/" element={<Home />} />
           <Route path="/carrinho" element={<Carrinho />} />
         </Routes>
-        <BolhaEl src={Bolha}></BolhaEl>
+        <BolhaEl src={Bolha} className="bolha"></BolhaEl>
 
       </div>
     </CarrinhoProvider>
