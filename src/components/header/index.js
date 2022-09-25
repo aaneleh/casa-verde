@@ -83,24 +83,24 @@ function Header() {
             <div>
                 <MenuDesktop>
                     <li>
-                        <a href="/#como-conseguir">
-                        Como Conseguir
-                        </a>
+                        <Link to="/#como-conseguir">
+                            Como conseguir
+                        </Link>
                     </li>
                     <li>
-                        <a href="/#ofertas">
+                        <Link to="/#ofertas">
                             Ofertas
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/">
+                        <Link to="/">
                             Depoimentos
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/">
+                    <Link to="/">
                             Vídeo
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <Link to="/carrinho">
@@ -117,24 +117,24 @@ function Header() {
                         <img src={fechar} alt="X"></img>
                     </FecharIcone>
                     <li>
-                        <a href="/#como-conseguir">
-                            Como Conseguir
-                        </a>
+                        <Link to="/#como-conseguir">
+                            Como conseguir
+                        </Link>
                     </li>
                     <li>
-                        <a href="/#ofertas">
+                        <Link to="/#ofertas">
                             Ofertas
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/">
+                        <Link to="/">
                             Depoimentos
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/">
+                    <Link to="/">
                             Vídeo
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <Link to="/carrinho">
