@@ -16,11 +16,11 @@ Site em React de uma loja de plantas inspirado no modelo figma disponibilizado n
 
 ## Descrição
 
-Site de uma loja de plantas feito em React utilizando styled componentes para estilização dos componentes e scss para o estilo geral. 
-Header com menu responsivo que alterna para uma sidebar em telas menores. Hero com input para newsletter que faz um fetch à uma [API para enviar um email ao usuário](https://github.com/aaneleh/enviador).
-Seção de como conseguir e sessão de ofertas que map as informações de um .json e as passa para um componente para ser exibido.
-O site também possui um carrinho e utiliza routes para navegar para ele.
-O carrinho funciona através de um contexto para salvar e atualizar a quantidade de cada produto e então, assim como as ofertas, exibe esses produtos utilizando um map e um componente que recebe as informações.
+Site de uma loja de plantas feito em React utilizando styled componentes para estilização dos componentes e scss para o estilo geral.   
+Header com menu responsivo que alterna para uma sidebar em telas menores. Hero com input para newsletter que faz um fetch à uma [API para enviar um email ao usuário](https://github.com/aaneleh/enviador).  
+Seção de como conseguir e sessão de ofertas que map as informações de um .json e as passa para um componente para ser exibido.  
+O site também possui um carrinho e utiliza routes para navegar para ele.  
+O carrinho funciona através de um contexto para salvar e atualizar a quantidade de cada produto e então, assim como as ofertas, exibe esses produtos utilizando um map e um componente que recebe as informações.  
 
 
 ## Linguagens
