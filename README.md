@@ -32,6 +32,7 @@ O carrinho funciona através de um contexto para salvar e atualizar a quantidade
 
 ## Desmonstração
 
-[![Thumbnail](https://img.youtube.com/vi/Z3dEkG6Jalc/0.jpg)](https://youtu.be/Z3dEkG6Jalc)
+[![Thumbnail](https://img.youtube.com/vi/w_lJSfirqUo/0.jpg)](https://youtu.be/w_lJSfirqUo)
+
 
 Acesse o site [aqui](https://casa-verde-wine.vercel.app/)
