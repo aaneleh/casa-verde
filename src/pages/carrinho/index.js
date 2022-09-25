@@ -50,8 +50,8 @@ function Carrinho() {
                         Total: R$ { 
                             
                             ItensCarrinho.reduce((total, atual) => {
-                                const item = plantasJson.find(planta => planta.id = atual.id)
-                                return total + (item.preco * atual.quantidade)
+                                const item = plantasJson.find(planta => planta.id === atual.id)
+                                return total + item.preco * atual.quantidade
                             }, 0)
                             
                         }
