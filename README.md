@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# 🌿 Casa Verde 🌿
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Site em React de uma loja de plantas inspirado no modelo figma disponibilizado nos 7DaysOfCode da Alura por Mario Souto.
 
-## Available Scripts
+![GitHub last commit](https://img.shields.io/github/last-commit/aaneleh/casa-verde)
+![wakatime](https://wakatime.com/badge/user/63a62ebf-02b8-40ab-b01b-99f672dace05/project/ab01dd98-b269-431b-a88b-ac26e7683b16.svg)
+[![Badge twitter](https://img.shields.io/twitter/follow/helena_kurzzz)](https://twitter.com/helena_kurzzz)
 
-In the project directory, you can run:
 
-### `npm start`
+## Sumário
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* [Descrição](#descrição)
+* [Linguagens](#linguagens)
+* [Demonstração](#desmonstração)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Descrição
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Site de uma loja de plantas feito em React utilizando styled componentes para estilização dos componentes e scss para o estilo geral. 
+Header com menu responsivo que alterna para uma sidebar em telas menores. Hero com input para newsletter que faz um fetch à uma [API para enviar um email ao usuário](https://github.com/aaneleh/enviador).
+Seção de como conseguir e sessão de ofertas que map as informações de um .json e as passa para um componente para ser exibido.
+O site também possui um carrinho e utiliza routes para navegar para ele.
+O carrinho funciona através de um contexto para salvar e atualizar a quantidade de cada produto e então, assim como as ofertas, exibe esses produtos utilizando um map e um componente que recebe as informações.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Linguagens
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- <img width="20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /> **React**
+- <img width="20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" /> **SCSS**
+- <img width="20px" src="https://avatars.githubusercontent.com/u/20658825?s=200&v=4" /> **styled-components**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Desmonstração
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[![Thumbnail](https://img.youtube.com/vi/Z3dEkG6Jalc/0.jpg)](https://youtu.be/Z3dEkG6Jalc)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Acesse o site [aqui](https://casa-verde-wine.vercel.app/)
