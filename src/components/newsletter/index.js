@@ -62,10 +62,10 @@ function Newsletter() {
             }
             );
             const resTxt = await res.text();
-            console.log(resTxt);
+            //console.log(resTxt);
             alert('Obrigada por se inscrever em nosso newsletter');
         } catch (err) {
-            console.log(err);
+            //console.log(err);
             alert('Erro ao se inscrever no newsletter');
         }
     };
