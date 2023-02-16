@@ -38,36 +38,49 @@ const ButtonNewsletter = styled.input`
 
 function Newsletter() {
 
-    async function post(body){
-/*         console.log(body); */
-        fetch("https://enviador.vercel.app/", {
-            method: 'POST',
-            body: JSON.stringify(body),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        }).then(function (response) {
-            return response.text();
-        }).then(function (text) {
-            alert(text);
-            console.log("response: ", text);
-        }).catch(function (error){
-            alert(error);
-            console.log("error: ",error);
-        })
+    function createBody(apiKey, to, from, subject, html){
+        const body = {
+            apiKey: apiKey,
+            to: to,
+            from: from,
+            subject: subject,
+            html: html
+        }
+        return body;
     }
 
+    const POST = async (body) => {
+        try {
+            const res = await fetch(
+            'https://enviador.vercel.app/', 
+            {
+                method: 'POST',
+                body: JSON.stringify(body),
+                headers:  {
+                'Content-Type': 'application/json'
+                },
+            }
+            );
+            const resTxt = await res.text();
+            console.log(resTxt);
+            alert('Obrigada por se inscrever em nosso newsletter');
+        } catch (err) {
+            console.log(err);
+            alert('Erro ao se inscrever no newsletter');
+        }
+    };
+    
     const validaEmail = (e) => {
         e.preventDefault();
-        let email = e.target.email.value;
-        const body = {
-            apikey: API_KEY,
-            to: email,
-            from: API_EMAIL,
-            subject: "Bem-vindo à Casa Verde!",
-            html: "Olá olá, muito obrigada por se inscrever no newsletter da Casa Verde"
-        }
-        post(body);
+        const apiKey = API_KEY;
+        let to = e.target.email.value;
+        const from = API_EMAIL;
+        const subject = "Parabéns, seu email foi enviado com node!";
+        const html = "Aqui fica escrito o corpo do email<br><br>Note que tags <code>html</code> funcionam, então é possível criar mensagens bem personalizadas para seus usuários!";
+        //objeto que vai ser enviado para a api
+        const body = createBody(apiKey, to, from, subject, html);
+        
+        POST(body);
     }
 
     return (
